@@ -1,0 +1,88 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", serif;
+}
+/* Shared Style */
+.btn {
+  border-radius: 70px;
+  box-shadow: 0px 2px 30px 0px rgba(252, 143, 73, 0.5);
+  background: linear-gradient(
+    69.4deg,
+    rgb(251, 162, 79) -6.919%,
+    rgb(255, 30, 30) 144.985%
+  );
+  padding: 18px 26px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: scale(1.07);
+}
+
+/* Header Style */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 0 4rem;
+}
+.hero .hero-content {
+  max-width: 510px;
+  
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(87, 87, 87);
+}
+.hero-title span {
+  color: rgb(251, 162, 79);
+}
+.hero .description {
+  color: rgb(130, 130, 130);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 35px 0;
+}
+.hero-image-container {
+  width: 665px;
+  height: 665px;
+  background-image: url(./images/shapes/Group8450.png);
+  background-position: center;
+  background-size: 500px 480px;
+  background-repeat: no-repeat;
+}
+.hero img {
+  width: 100%;
+  margin-top: -20px;
+  margin-left: -50px;
+}
+/* Header Style End */
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    .hero{
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+/* For Tablet */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .hero{
+        flex-direction: column;
+        padding: 10px;
+    }
+}
