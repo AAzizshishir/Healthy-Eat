@@ -39,7 +39,6 @@ body {
 }
 .hero .hero-content {
   max-width: 510px;
-  
 }
 .hero-title {
   font-size: 3rem;
@@ -56,7 +55,7 @@ body {
   margin: 35px 0;
 }
 .hero-image-container {
-  width: 665px;
+  max-width: 665px;
   height: 665px;
   background-image: url(./images/shapes/Group8450.png);
   background-position: center;
@@ -70,19 +69,64 @@ body {
 }
 /* Header Style End */
 
+/* About */
+.about {
+  background-image: url(./images/shapes/7.png);
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  padding: 50px 180px 0 180px;
+}
+.about img {
+  width: 284px;
+  height: 467px;
+}
+.about .title {
+  color: rgb(112, 112, 112);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about .description {
+  color: rgb(24, 25, 31);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 1rem 0 4rem 0;
+}
+/* About Section End */
 /* Responsive */
-@media screen and (max-width:576px) {
-    .hero{
-        flex-direction: column;
-        padding: 10px;
-        justify-content: center;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 576px) {
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .hero .hero-title{
+    font-size: 1.8rem;
+  }
+  .about {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+  }
+  .hero-image-container {
+    background-size: 300px 300px;
+  }
+  .hero img {
+    margin-top: 70px;
+    margin-left: -30px;
+  }
 }
 /* For Tablet */
-@media screen and (min-width:576px) and (max-width:992px) {
-    .hero{
-        flex-direction: column;
-        padding: 10px;
-    }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .about {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+  }
 }
