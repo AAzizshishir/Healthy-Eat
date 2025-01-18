@@ -94,6 +94,54 @@ body {
   margin: 1rem 0 4rem 0;
 }
 /* About Section End */
+
+/* Recipe Section */
+.recipe {
+ 
+  max-width: 1020px;
+  margin: 80px auto;
+  text-align: center;
+}
+.recipe .title {
+  color: rgb(103, 103, 103);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.recipe .description {
+  color: rgb(37, 37, 37);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+.recipe .card {
+  border-radius: 20px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 22px;
+}
+.recipe .card img {
+  width: 100%;
+}
+.recipe .food-title {
+  color: rgb(24, 25, 31);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+.recipe .food-description {
+  color: rgb(24, 25, 31);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0.8rem 0;
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
   .hero {
@@ -102,7 +150,7 @@ body {
     justify-content: center;
     margin: 0 auto;
   }
-  .hero .hero-title{
+  .hero .hero-title {
     font-size: 1.8rem;
   }
   .about {
@@ -116,6 +164,12 @@ body {
   .hero img {
     margin-top: 70px;
     margin-left: -30px;
+  }
+  .card-container{
+    grid-template-columns: 1fr;
+  }
+  .recipe{
+    padding: 0 0.8rem;
   }
 }
 /* For Tablet */
