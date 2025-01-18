@@ -97,7 +97,6 @@ body {
 
 /* Recipe Section */
 .recipe {
- 
   max-width: 1020px;
   margin: 80px auto;
   text-align: center;
@@ -142,6 +141,30 @@ body {
   font-weight: 400;
   margin: 0.8rem 0;
 }
+
+/* Social */
+.social {
+  max-width: 1020px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 30px 120px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social h2 {
+  color: rgb(24, 25, 31);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.social span {
+  color: rgb(24, 25, 31);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
   .hero {
@@ -165,10 +188,10 @@ body {
     margin-top: 70px;
     margin-left: -30px;
   }
-  .card-container{
+  .card-container {
     grid-template-columns: 1fr;
   }
-  .recipe{
+  .recipe {
     padding: 0 0.8rem;
   }
 }
